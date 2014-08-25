@@ -6,9 +6,10 @@
 standard-app-packages
 famono
 famous-components
-bootstrap-3
 iron-router
 collection2
 http
 moment
-font-awesome
+less
+font-awesome-4-less
+less-bootstrap-3

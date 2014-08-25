@@ -11,9 +11,10 @@
 		</div>
 	</div>
 	{{/Surface}}
+	{{items.count}}
 	{{#if items.count}}
 	{{#famousEach items}}
-	{{#Surface size='[undefined,60]'}}
+	{{#Surface size='[undefined,80]'}}
 	<div class="cafeItem">
 		{{> cafeItem}}
 	</div>
@@ -33,8 +34,8 @@
 <template name="cafeItem">
 	<a class="list-group-item" href="http://maps.google.com/maps?saddr={{userAddress}}&daddr={{fullAddress}}">
 		<h4>
-			<strong>{{nom}}</strong>
-			<small class="pull-right">{{fullAddress}}</small>
+			<strong>{{nom}}</strong><br>
+			<small>{{fullAddress}}</small>
 		</h4>
 	</a>
 </template>

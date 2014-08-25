@@ -4,14 +4,14 @@
     "basePackages": {
       "collection2": {},
       "moment": {},
+      "less-bootstrap-3": {},
+      "font-awesome-4-less": {},
       "famono": {},
       "famous-components": {},
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.8.2"
-      },
-      "bootstrap-3": {},
-      "font-awesome": {}
+      }
     },
     "packages": {
       "collection2": {
@@ -23,6 +23,16 @@
         "git": "https://github.com/acreeger/meteor-moment.git",
         "tag": "v2.8.1",
         "commit": "722ea63783d594341023836b7d418ab2567dab8c"
+      },
+      "less-bootstrap-3": {
+        "git": "https://github.com/DerMambo/less-bootstrap-3.git",
+        "tag": "v0.0.2",
+        "commit": "b5010b2ff9e9ae6b0e6e13eb0f6c81c9cb84373e"
+      },
+      "font-awesome-4-less": {
+        "git": "https://github.com/svub/fontawesome4-less.git",
+        "tag": "v4.4.0",
+        "commit": "250d2336a217c18eb70e9d074784a7db3ca38472"
       },
       "famono": {
         "git": "https://github.com/raix/Meteor-famono.git",
@@ -38,16 +48,6 @@
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.8.2",
         "commit": "05415a8891ea87a00fb1e2388585f2ca5a38e0da"
-      },
-      "bootstrap-3": {
-        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
-        "tag": "v3.2.0-1",
-        "commit": "17a63902fc6cf1096c5289d963c66cf28b474727"
-      },
-      "font-awesome": {
-        "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
-        "tag": "v4.1.0",
-        "commit": "ce6b1e92715d1938babc5d69c655c17e387f5926"
       },
       "simple-schema": {
         "git": "https://github.com/aldeed/meteor-simple-schema.git",
