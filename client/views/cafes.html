@@ -1,0 +1,40 @@
+<template name="cafes">
+	{{#Scrollview size="[undefined,undefined]" items=items}}
+	{{#Surface size="[undefined,180]"}}
+	<div class="jumbotron">
+		<div class="container">
+			<p>Votre position actuelle:</p>
+			<h3>
+				<i class="fa fa-map-marker"></i>&nbsp;
+				{{{userAddress}}}
+			</h3>
+		</div>
+	</div>
+	{{/Surface}}
+	{{#if items.count}}
+	{{#famousEach items}}
+	{{#Surface size='[undefined,60]'}}
+	<div class="cafeItem">
+		{{> cafeItem}}
+	</div>
+	{{/Surface}}
+	{{/famousEach}}
+	{{#else}}
+	{{#Surface size='[undefined,60]'}}
+	<div>
+		Aucun résultats à proximité.
+	</div>
+	{{/Surface}}
+	{{/else}}
+	{{/if}}
+	{{/Scrollview}}
+</template>
+
+<template name="cafeItem">
+	<a class="list-group-item" href="http://maps.google.com/maps?saddr={{userAddress}}&daddr={{fullAddress}}">
+		<h4>
+			<strong>{{nom}}</strong>
+			<small class="pull-right">{{fullAddress}}</small>
+		</h4>
+	</a>
+</template>

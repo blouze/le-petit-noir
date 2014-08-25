@@ -1,0 +1,14 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+standard-app-packages
+famono
+famous-components
+bootstrap-3
+iron-router
+collection2
+http
+moment
+font-awesome
